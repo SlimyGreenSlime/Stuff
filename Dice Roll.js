@@ -23,6 +23,6 @@ function roll(dice) {
 	for (let i = 0; i < parseInt(finalsplit[0]); i+=1){
 			rollsum += (Math.floor(Math.random() * (parseInt(finalsplit[1]))) + 1);
 	}
-		return "You rolled a " + (rollsum + finalsplit[2]) + ".";
+		return "You rolled " + (rollsum + finalsplit[2]) + ".";
 }
 
