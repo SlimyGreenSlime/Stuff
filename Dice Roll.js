@@ -1,4 +1,4 @@
-/* Want to roll dice for input of n xdy + z, where */
+/* Want to roll dice for input of xdy + z, where */
 /* x = number of dice being rolled. y = type of dice. z = modifier to the dice roll. */
 /* rolls an x amount of y dice n times and adds z to each roll. */
 
