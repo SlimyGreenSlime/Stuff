@@ -6,7 +6,7 @@ function roll(dice) {
 	var splitdice = dice.split("d");
 	if (splitdice[0] === "") {
 		splitdice[0] = 1;
-		} console.log(splitdice);
+		};
 	var splitdice2;
 	if (dice.indexOf("-") > 0) {
 		splitdice2 = splitdice[1].split("-");
