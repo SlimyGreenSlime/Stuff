@@ -4,6 +4,9 @@
 
 function roll(dice) {
 	var splitdice = dice.split("d");
+	if (splitdice[0] === "") {
+		splitdice[0] = 1;
+		} console.log(splitdice);
 	var splitdice2;
 	if (dice.indexOf("-") > 0) {
 		splitdice2 = splitdice[1].split("-");
@@ -20,9 +23,8 @@ function roll(dice) {
 		}
 		else {finalsplit[2] = parseInt(finalsplit[2]);}
 	var rollsum = 0;
-	for (let i = 0; i < parseInt(finalsplit[0]); i+=1){
+	for (let i = 0; i < parseInt(finalsplit[0]); i+=1) {
 			rollsum += (Math.floor(Math.random() * (parseInt(finalsplit[1]))) + 1);
 	}
-		return "You rolled " + (rollsum + finalsplit[2]) + ".";
+		return "You rolled a " + (rollsum + finalsplit[2]) + ".";
 }
-
